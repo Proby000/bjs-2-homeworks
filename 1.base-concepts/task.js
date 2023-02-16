@@ -34,7 +34,7 @@ function calculateTotalMortgage(percent, contribution, amount, countMonths) {
     else {
       let s = amount - contribution;						  //тело кредита
       let n = countMonths; //срок кредита в месяцах
-      let pay = s * (per+per / (((1 + per) ** n) - 1));			//ежемесячная оплата
+      let pay = s * (per + per / (((1 + per) ** n) - 1));			//ежемесячная оплата
       let totalAmount = (pay * n).toFixed(2);
       return Number(totalAmount);
   }
